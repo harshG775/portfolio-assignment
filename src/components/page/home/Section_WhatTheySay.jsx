@@ -32,7 +32,7 @@ export default function Section_WhatTheySay() {
                         {whatTheySay.map(({ user, description }, index) => (
                             <CarouselItem
                                 key={index}
-                                className="grid sm:grid-cols-2 items-center gap-6 p-6 bg-muted/40 rounded-lg"
+                                className="grid sm:grid-cols-2 items-start gap-6 p-8 bg-muted/40 rounded-lg"
                             >
                                 {/* User Info with Avatar */}
                                 <div className="flex items-center gap-3">
@@ -47,7 +47,7 @@ export default function Section_WhatTheySay() {
                                 </div>
 
                                 {/* Testimonial */}
-                                <p className="md:text-base text-muted-foreground leading-relaxed text-center max-w-md">
+                                <p className="md:text-base text-muted-foreground leading-relaxed max-w-md">
                                     {description}
                                 </p>
                             </CarouselItem>
