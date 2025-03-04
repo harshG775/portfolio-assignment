@@ -5,9 +5,9 @@ import Loading from "./routes/loading";
 // layouts
 import RootLayout from "@/routes/root/layout";
 import ErrorBoundary from "./components/appRouter/ErrorBoundary";
+import RootRoute from "./routes/root";
 // routes
 const NotFoundRoute = lazy(() => import("@/routes/not-found"));
-const RootRoute = lazy(() => import("@/routes/root"));
 
 const router = createBrowserRouter([
     {
