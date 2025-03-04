@@ -65,3 +65,8 @@
         @apply bg-background text-foreground;
     }
 }
+.h1 {
+    font: 800 40px Arial;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+  }
