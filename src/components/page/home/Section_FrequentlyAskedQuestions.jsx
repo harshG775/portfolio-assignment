@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Section from "@/components/partials/Section";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const frequentlyAskedQuestions = [
     {
@@ -20,28 +20,22 @@ const frequentlyAskedQuestions = [
 ];
 
 export default function Section_FrequentlyAskedQuestions() {
-    const [expandedIndex, setExpandedIndex] = useState(0);
-
     return (
         <Section title="Frequently Asked Questions">
-            <ul className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-4">
                 {frequentlyAskedQuestions.map(({ question, solution }, index) => (
-                    <li key={index} className="p-4 border rounded-lg shadow-sm bg-muted">
-                        <button
-                            className="w-full text-left flex justify-between items-center font-semibold text-lg focus:outline-none"
-                            onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
-                        >
-                            <span>{question}</span>
-                            <span className="text-xl">{expandedIndex === index ? "−" : "+"}</span>
-                        </button>
-                        {expandedIndex === index && (
-                            <p className="text-sm md:text-base text-muted-foreground leading-relaxed mt-2">
-                                {solution || "This question is currently unanswered."}
-                            </p>
-                        )}
-                    </li>
+                    <AccordionItem
+                        key={index}
+                        value={`faq-${index}`}
+                        className="border rounded-lg shadow-sm bg-muted/60 px-4"
+                    >
+                        <AccordionTrigger className="font-semibold text-lg">{question}</AccordionTrigger>
+                        <AccordionContent className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                            {solution || "This question is currently unanswered."}
+                        </AccordionContent>
+                    </AccordionItem>
                 ))}
-            </ul>
+            </Accordion>
         </Section>
     );
 }
