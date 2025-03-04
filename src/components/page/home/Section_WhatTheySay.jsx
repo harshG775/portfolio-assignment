@@ -32,7 +32,7 @@ export default function Section_WhatTheySay() {
                         {whatTheySay.map(({ user, description }, index) => (
                             <CarouselItem
                                 key={index}
-                                className="grid sm:grid-cols-2 items-start gap-6 p-8 bg-muted/40 rounded-lg"
+                                className="grid sm:grid-cols-2 items-start gap-6 p-8 bg-muted/60 rounded-lg"
                             >
                                 {/* User Info with Avatar */}
                                 <div className="flex items-center gap-3">
