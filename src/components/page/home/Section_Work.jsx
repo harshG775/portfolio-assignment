@@ -27,7 +27,7 @@ export default function Section_Work() {
                 {works.map(({ imgUrl, title, tags }, index) => (
                     <li
                         key={index}
-                        className="grid sm:grid-cols-2 gap-4 p-4 rounded-2xl  bg-gradient-to-r from-accent-foreground/60 via-orange-200/80 to-accent-foreground/60 "
+                        className="grid md:grid-cols-2 gap-4 p-4 rounded-2xl  bg-gradient-to-r from-accent-foreground/60 via-orange-200/80 to-accent-foreground/60 "
                     >
                         <div>
                             <img

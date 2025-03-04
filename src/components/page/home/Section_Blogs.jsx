@@ -29,13 +29,11 @@ export default function Section_Blogs() {
                 {blogs.map(({ imgUrl, date, title, tags }, index) => (
                     <li key={index} className="flex flex-col md:flex-row items-start md:items-center gap-4  py-4">
                         {/* Image */}
-                        <div className="w-48 h-40 flex-shrink-0">
                             <img
                                 src={imgUrl || "https://placehold.co/600x400"} // Default image
                                 alt={title}
-                                className="w-full h-full object-cover rounded-lg"
+                                className="md:max-w-64 w-full h-full object-cover rounded-lg"
                             />
-                        </div>
 
                         {/* Blog Content */}
                         <div className="flex-1">
