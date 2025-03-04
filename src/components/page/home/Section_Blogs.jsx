@@ -24,13 +24,10 @@ const blogs = [
 
 export default function Section_Blogs() {
     return (
-        <Section title="Blogs">
+        <Section title="Blogs" titleRight={<Button variant="link">View All</Button>}>
             <ul className="space-y-6">
                 {blogs.map(({ imgUrl, date, title, tags }, index) => (
-                    <li
-                        key={index}
-                        className="flex flex-col md:flex-row items-start md:items-center gap-4  py-4"
-                    >
+                    <li key={index} className="flex flex-col md:flex-row items-start md:items-center gap-4  py-4">
                         {/* Image */}
                         <div className="w-48 h-40 flex-shrink-0">
                             <img
