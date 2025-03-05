@@ -5,6 +5,7 @@ import Section_Experience from "@/components/page/home/Section_Experience";
 import Section_Blogs from "@/components/page/home/Section_Blogs";
 import Section_WhatTheySay from "@/components/page/home/Section_WhatTheySay";
 import Section_FrequentlyAskedQuestions from "@/components/page/home/Section_FrequentlyAskedQuestions";
+import Section_LetsTalk from "@/components/page/home/Section_LetsTalk";
 export default function RootRoute() {
     return (
         <main className="min-h-[calc(100svh-10.7rem)]">
@@ -15,6 +16,7 @@ export default function RootRoute() {
             <Section_Blogs />
             <Section_WhatTheySay />
             <Section_FrequentlyAskedQuestions />
+            <Section_LetsTalk />
         </main>
     );
 }
