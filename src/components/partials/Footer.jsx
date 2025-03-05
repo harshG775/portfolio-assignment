@@ -1,15 +1,16 @@
 import { ArrowUpRightIcon } from "lucide-react";
 import { Link } from "react-router";
+import { StarIcon } from "../icons";
 const skillsBanner = [{ title: "WEBFLOW" }, { title: "FIGMA" }, { title: "DESIGNER" }, { title: "DEVELOPER" }];
 
 function SkillsBanner() {
     return (
         <div className="w-full py-8 mb-10 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
             <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                {skillsBanner.map(({ title, img }, i) => (
-                    <div key={i} className="mx-8 flex items-center gap-2">
-                        <img src={img} alt={title} className="w-10 h-10 object-contain" />
-                        <span className="text-lg font-semibold text-secondary-foreground ">{title}</span>
+                {skillsBanner.map(({ title }, i) => (
+                    <div key={i} className="mx-8 flex items-center gap-12">
+                        <StarIcon/>
+                        <h4 className="text-2xl outline-stock font-semibold text-secondary-foreground ">{title}</h4>
                     </div>
                 ))}
             </ul>
@@ -17,10 +18,10 @@ function SkillsBanner() {
                 className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
                 aria-hidden="true"
             >
-                {skillsBanner.map(({ title, img }, i) => (
-                    <div key={i} className="mx-8 flex items-center gap-2">
-                        <img src={img} alt={title} className="w-10 h-10 object-contain" />
-                        <span className="text-lg font-semibold text-secondary-foreground ">{title}</span>
+                {skillsBanner.map(({ title }, i) => (
+                    <div key={i} className="mx-8 flex items-center gap-12">
+                        <StarIcon/>
+                        <h4 className="text-2xl outline-stock font-semibold text-secondary-foreground ">{title}</h4>
                     </div>
                 ))}
             </ul>
