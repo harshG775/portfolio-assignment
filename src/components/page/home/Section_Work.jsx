@@ -31,7 +31,7 @@ export default function Section_Work() {
         <Section title="Works" titleRight={<Button variant="link">View All</Button>}>
             <ul className="space-y-6">
                 {works.map(({ imgUrl, title, description, tags }, index) => (
-                    <li key={index} className="relative overflow-hidden grid md:grid-cols-2 gap-4 p-4 rounded-2xl  bg-secondary-foreground/50 backdrop-blur-md ">
+                    <li key={index} className="relative overflow-hidden grid md:grid-cols-2 gap-4 p-4 rounded-2xl bg-secondary dark:bg-secondary-foreground/50 backdrop-blur-md ">
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#FF804A] opacity-50 blur-3xl h-52 w-52 rounded-full"></div>
                         <div className="z-10">
                             <img
