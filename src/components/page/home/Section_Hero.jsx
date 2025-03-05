@@ -21,14 +21,14 @@ export default function Section_Hero() {
             </div>
 
             {/* Branding & Introduction */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-32 max-w-6xl px-8">
-                <div className="grid grid-cols-3 gap-8 justify-items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-32 max-w-6xl px-8">
+                <div className="grid grid-cols-3 gap-8 justify-items-start items-center">
                     <DoraDesignIcon className="w-36" aria-label="Dora Design" />
                     <WavefunIcon className="w-36" aria-label="Wavefun" />
                     <SilsilaIcon className="w-36" aria-label="Silsila" />
                 </div>
                 <div className="col-span-1">
-                    <p className="text-sm md:text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-sm lg:text-lg text-muted-foreground leading-relaxed">
                         Welcome to my portfolio. Here, artistry meets functionality. Dive into a curated showcase of
                         distinctive branding and web designs, each crafted to captivate and inspire.
                     </p>
