@@ -22,7 +22,7 @@ const frequentlyAskedQuestions = [
 export default function Section_FrequentlyAskedQuestions() {
     return (
         <Section title="Frequently Asked Questions">
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" defaultValue={"faq-0"} collapsible className="space-y-4">
                 {frequentlyAskedQuestions.map(({ question, solution }, index) => (
                     <AccordionItem
                         key={index}
