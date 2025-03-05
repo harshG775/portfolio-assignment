@@ -16,7 +16,7 @@ export default function Section_Hero() {
                     <span className="inline-block">FROM</span>
                 </p>
                 <p className="text-3xl md:text-5xl xl:text-7xl font-syne font-extrabold text-foreground flex flex-wrap items-center md:justify-center space-x-2  mt-4 md:mt-8">
-                    <span className="inline-block">San Francisco</span>
+                    <span className="inline-block">SAN FRANCISCO</span>
                 </p>
             </div>
 
