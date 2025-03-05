@@ -5,17 +5,17 @@ export default function Section_Hero() {
         <section className="relative flex flex-col items-center justify-center py-16 md:py-24 lg:py-32  bg-background">
             {/* Hero Text */}
             <div className="text-center px-4">
-                <p className="text-4xl md:text-7xl font-bold text-foreground flex flex-wrap items-center justify-center space-x-2">
+                <p className="text-3xl md:text-5xl font-syne font-extrabold text-foreground flex flex-wrap items-center md:justify-center space-x-2">
                     <span className="inline-block">I AM A</span>
                     <img src="/home/hero/Rectangle.png" alt="Icon" className="h-8 md:h-12" />
                     <span className="inline-block">FREELANCE</span>
                 </p>
-                <p className="text-4xl md:text-7xl font-bold text-foreground flex flex-wrap items-center justify-center space-x-2 mt-2">
+                <p className="text-3xl md:text-5xl font-syne font-extrabold text-foreground flex flex-wrap items-center md:justify-center space-x-2 mt-4">
                     <span className="inline-block">DESIGNER</span>
                     <img src="/home/hero/Rectangle (1).png" alt="Icon" className="h-8 md:h-12" />
                     <span className="inline-block">FROM</span>
                 </p>
-                <p className="text-4xl md:text-7xl font-bold text-foreground flex flex-wrap items-center justify-center space-x-2 mt-2">
+                <p className="text-3xl md:text-5xl font-syne font-extrabold text-foreground flex flex-wrap items-center md:justify-center space-x-2 mt-4">
                     <span className="inline-block">San Francisco</span>
                 </p>
             </div>
