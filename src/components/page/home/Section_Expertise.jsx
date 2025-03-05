@@ -1,5 +1,4 @@
 import Section from "@/components/partials/Section";
-import { CircleIcon } from "lucide-react";
 
 const expertise = [
     {
@@ -29,9 +28,9 @@ export default function Section_Expertise() {
         <Section title="Expertise">
             <ul className="grid gap-6 sm:grid-cols-2">
                 {expertise.map(({ title, description }, index) => (
-                    <li key={index} className="p-4 bg-muted rounded-xl shadow-sm">
+                    <li key={index} className="p-4 bg-muted/40 rounded-xl shadow-sm">
                         <div className="flex items-center gap-2">
-                            <CircleIcon className="w-4 h-4"/>
+                            <div className="w-2.5 h-2.5 border-2 bg-foreground"/>
                             <div className="font-semibold text-lg ">{title}</div>
                         </div>
                         <p className="text-sm md:text-base text-muted-foreground leading-relaxed mt-2">{description}</p>
