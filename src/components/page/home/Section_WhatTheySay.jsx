@@ -1,11 +1,12 @@
 import Section from "@/components/partials/Section";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Quote } from "lucide-react";
 
 const whatTheySay = [
     {
         user: {
-            imgUrl: "/avatars/floyd-miles.jpg",
+            imgUrl: "/home/Flayd-Miles.png",
             name: "Floyd Miles",
             from: "eBay",
         },
@@ -14,9 +15,18 @@ const whatTheySay = [
     },
     {
         user: {
-            imgUrl: "/avatars/jane-doe.jpg",
-            name: "Jane Doe",
+            imgUrl: "/home/Flayd-Miles.png",
+            name: "john Doe",
             from: "Google",
+        },
+        description:
+            "I was able to land my dream job thanks to Synergy. The resume builder made it incredibly easy to showcase my skills effectively!",
+    },
+    {
+        user: {
+            imgUrl: "/home/Flayd-Miles.png",
+            name: "Doe Jane",
+            from: "Meta",
         },
         description:
             "I was able to land my dream job thanks to Synergy. The resume builder made it incredibly easy to showcase my skills effectively!",
@@ -30,10 +40,7 @@ export default function Section_WhatTheySay() {
                 <Carousel className="relative">
                     <CarouselContent>
                         {whatTheySay.map(({ user, description }, index) => (
-                            <CarouselItem
-                                key={index}
-                                className="grid sm:grid-cols-2 items-start gap-6 p-8 bg-muted/60 rounded-lg"
-                            >
+                            <CarouselItem key={index} className="grid sm:grid-cols-2 items-start gap-6 p-8  rounded-lg">
                                 {/* User Info with Avatar */}
                                 <div className="flex items-center gap-3">
                                     <Avatar>
@@ -47,8 +54,13 @@ export default function Section_WhatTheySay() {
                                 </div>
 
                                 {/* Testimonial */}
-                                <p className="md:text-base text-muted-foreground leading-relaxed max-w-md">
+                                <p className="relative md:text-base text-muted-foreground leading-relaxed max-w-md">
+                                    <Quote
+                                        fill="white"
+                                        className="text-foreground/0 opacity-80 absolute -top-6 -left-8 rotate-180"
+                                    />
                                     {description}
+                                    <Quote fill="white" className="text-foreground/0 opacity-80 absolute -top-6 -right-6" />
                                 </p>
                             </CarouselItem>
                         ))}
