@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button";
 
 const blogs = [
     {
-        imgUrl: "", // Empty image
+        imgUrl: "/home/Analysis-Application.png",
         date: "Nov 9, 2023",
         title: "How UX works in web",
         tags: ["UI", "UX"],
     },
     {
-        imgUrl: "", // Empty image
+        imgUrl: "/home/Fortknox-Application.png",
         date: "Nov 9, 2023",
         title: "How UX works in web",
         tags: ["UI", "UX"],
     },
     {
-        imgUrl: "", // Empty image
+        imgUrl: "/home/Zenocide-Application.png",
         date: "Nov 9, 2023",
         title: "How UX works in web",
         tags: ["UI", "UX"],
@@ -29,11 +29,11 @@ export default function Section_Blogs() {
                 {blogs.map(({ imgUrl, date, title, tags }, index) => (
                     <li key={index} className="flex flex-col md:flex-row items-start md:items-center gap-4  py-4">
                         {/* Image */}
-                            <img
-                                src={imgUrl || "https://placehold.co/600x400"} // Default image
-                                alt={title}
-                                className="md:max-w-64 w-full h-full object-cover rounded-lg"
-                            />
+                        <img
+                            src={imgUrl || "https://placehold.co/600x400"} // Default image
+                            alt={title}
+                            className="md:max-w-64 w-full h-full object-cover rounded-lg"
+                        />
 
                         {/* Blog Content */}
                         <div className="flex-1">
