@@ -3,6 +3,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link, useLocation } from "react-router";
+import { LogoIcon } from "../icons";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className="flex items-center">
                     <Link to="/" className="flex items-center space-x-2">
-                        <span className="text-xl font-bold">LOGO</span>
+                        <LogoIcon className="w-8 h-8" />
                     </Link>
                 </div>
 

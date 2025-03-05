@@ -1,35 +1,33 @@
+import { DoraDesignIcon, SilsilaIcon, WavefunIcon } from "@/components/icons";
+
 export default function Section_Hero() {
     return (
-        <section className="relative flex flex-col items-center justify-center py-16 md:py-24 lg:py-32 bg-background">
+        <section className="relative flex flex-col items-center justify-center py-16 md:py-24 lg:py-32  bg-background">
             {/* Hero Text */}
-            <div className="text-center">
-                <p className="text-3xl md:text-5xl font-bold text-foreground flex items-center justify-center space-x-2">
-                    <span>I AM A</span>
-                    <img src="/your-image-path.svg" alt="Icon" className="h-8 md:h-12" />
-                    <span>FREELANCE</span>
+            <div className="text-center px-4">
+                <p className="text-4xl md:text-7xl font-bold text-foreground flex flex-wrap items-center justify-center space-x-2">
+                    <span className="inline-block">I AM A</span>
+                    <img src="/home/hero/Rectangle.png" alt="Icon" className="h-8 md:h-12" />
+                    <span className="inline-block">FREELANCE</span>
                 </p>
-                <p className="text-3xl md:text-5xl font-bold text-foreground flex items-center justify-center space-x-2 mt-2">
-                    <span>DESIGNER</span>
-                    <img src="/your-image-path.svg" alt="Icon" className="h-8 md:h-12" />
-                    <span>FROM</span>
+                <p className="text-4xl md:text-7xl font-bold text-foreground flex flex-wrap items-center justify-center space-x-2 mt-2">
+                    <span className="inline-block">DESIGNER</span>
+                    <img src="/home/hero/Rectangle (1).png" alt="Icon" className="h-8 md:h-12" />
+                    <span className="inline-block">FROM</span>
                 </p>
-                <p className="text-3xl md:text-5xl font-bold text-foreground flex items-center justify-center space-x-2 mt-2">
-                    <span>San Francisco</span>
+                <p className="text-4xl md:text-7xl font-bold text-foreground flex flex-wrap items-center justify-center space-x-2 mt-2">
+                    <span className="inline-block">San Francisco</span>
                 </p>
             </div>
 
             {/* Branding & Introduction */}
-            <div className="grid grid-cols-6 gap-4 mt-12 max-w-4xl">
-                <div className="flex items-center justify-center">
-                    <div className="p-4 bg-muted rounded-lg shadow-md">Brand icon</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-32 max-w-6xl px-8">
+                <div className="grid grid-cols-3 gap-8 justify-items-center">
+                    <DoraDesignIcon className="w-36" aria-label="Dora Design" />
+                    <WavefunIcon className="w-36" aria-label="Wavefun" />
+                    <SilsilaIcon className="w-36" aria-label="Silsila" />
                 </div>
-                <div className="flex items-center justify-center">
-                    <div className="p-4 bg-muted rounded-lg shadow-md">Brand icon</div>
-                </div>
-                <div className="flex items-center justify-center">
-                    <div className="p-4 bg-muted rounded-lg shadow-md">Brand icon</div>
-                </div>
-                <div className="col-span-3">
+                <div className="col-span-1">
                     <p className="text-sm md:text-lg text-muted-foreground leading-relaxed">
                         Welcome to my portfolio. Here, artistry meets functionality. Dive into a curated showcase of
                         distinctive branding and web designs, each crafted to captivate and inspire.

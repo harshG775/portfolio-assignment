@@ -1,5 +1,6 @@
 import { ArrowUpRightIcon } from "lucide-react";
 import { Link } from "react-router";
+import { LetsTalkIcon } from "../icons";
 
 const skillsBanner = [{ title: "WEBFLOW" }, { title: "FIGMA" }, { title: "DESIGNER" }, { title: "DEVELOPER" }];
 
@@ -31,11 +32,13 @@ function SkillsBanner() {
 
 export default function Footer() {
     return (
-        <footer className="w-full  bg-background py-6">
+        <footer className="w-full  bg-background py-8">
             <div className="container mx-auto mb-10">
                 <SkillsBanner />
                 <div>
-                    <h2 className="text-4xl font-bold text-center mb-6">LET’S TALK!</h2>
+                    <div className="flex justify-center mb-6">
+                        <LetsTalkIcon />
+                    </div>
                     <div className="flex justify-center">
                         <Link to={"mailto:rehanurraihan@gmail.com"}>rehanurraihan@gmail.com</Link>
                         <ArrowUpRightIcon />
