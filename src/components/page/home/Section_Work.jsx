@@ -31,18 +31,16 @@ export default function Section_Work() {
         <Section title="Works" titleRight={<Button variant="link">View All</Button>}>
             <ul className="space-y-6">
                 {works.map(({ imgUrl, title, description, tags }, index) => (
-                    <li
-                        key={index}
-                        className="grid md:grid-cols-2 gap-4 p-4 rounded-2xl  bg-gradient-to-r from-accent-foreground/60 via-orange-200/80 to-accent-foreground/60 "
-                    >
-                        <div>
+                    <li key={index} className="relative overflow-hidden grid md:grid-cols-2 gap-4 p-4 rounded-2xl  bg-secondary-foreground/50 backdrop-blur-md ">
+                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#FF804A] opacity-50 blur-3xl h-52 w-52 rounded-full"></div>
+                        <div className="z-10">
                             <img
                                 src={imgUrl || "https://placehold.co/600x400"} // Default image
                                 alt={title}
                                 className="w-full h-full object-cover rounded-lg"
                             />
                         </div>
-                        <div className="flex-1 flex flex-col gap-2">
+                        <div className="z-10 flex-1 flex flex-col gap-2">
                             <h3 className="text-2xl font-semibold">{title}</h3>
                             <p className="text-sm md:text-base leading-relaxed mt-2">{description}</p>
                             <div className="flex gap-2 mt-2">
